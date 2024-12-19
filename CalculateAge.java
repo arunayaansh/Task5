@@ -12,7 +12,7 @@ public class CalculateAge {
         System.out.print("Enter your birthdate (yyyy-mm-dd): ");
         String birthDateString = scanner.nextLine();
 
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-mm-dd");
         LocalDate birthDate = LocalDate.parse(birthDateString, formatter);
 
         LocalDate today = LocalDate.now();
